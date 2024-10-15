@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Peças de Ventiladores Usados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>VentilaShop</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Revenda de Peças de Ventiladores Usados</h2>
+            <p>Encontre as melhores peças para consertar seu ventilador antigo.</p>
+            <a href="#products" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="fan-blades.jpg" alt="Pás de Ventilador">
+                <h3>Pás de Ventilador</h3>
+                <p>Peça usada, bem conservada. Compatível com ventiladores de 40cm.</p>
+                <p><strong>Preço:</strong> R$ 25,00</p>
+                <button class="btn-buy" onclick="sendMessage('Pás de Ventilador')">Comprar via WhatsApp</button>
+            </div>
+            <div class="product-item">
+                <img src="motor-fan.jpg" alt="Motor de Ventilador">
+                <h3>Motor de Ventilador</h3>
+                <p>Motor usado com 6 meses de garantia, baixa rotação.</p>
+                <p><strong>Preço:</strong> R$ 70,00</p>
+                <button class="btn-buy" onclick="sendMessage('Motor de Ventilador')">Comprar via WhatsApp</button>
+            </div>
+            <div class="product-item">
+                <img src="fan-grill.jpg" alt="Grade de Ventilador">
+                <h3>Grade de Ventilador</h3>
+                <p>Grade de proteção usada, sem amassados. Tamanho: 50cm.</p>
+                <p><strong>Preço:</strong> R$ 20,00</p>
+                <button class="btn-buy" onclick="sendMessage('Grade de Ventilador')">Comprar via WhatsApp</button>
+            </div>
+            <div class="product-item">
+                <img src="fan-switch.jpg" alt="Chave de Velocidade">
+                <h3>Chave de Velocidade</h3>
+                <p>Chave de controle de velocidades de ventiladores antigos.</p>
+                <p><strong>Preço:</strong> R$ 15,00</p>
+                <button class="btn-buy" onclick="sendMessage('Chave de Velocidade')">Comprar via WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos especializados na revenda de peças de ventiladores usados. Nossos produtos são revisados e garantimos a melhor qualidade para o seu ventilador. Contamos com uma equipe experiente e uma vasta gama de modelos.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Enviar via WhatsApp</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VentilaShop. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
